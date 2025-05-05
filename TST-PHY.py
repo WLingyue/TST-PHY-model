@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed May 17 23:12:08 2023
 
-@author: wanglingyue
-"""
 
 from tsai.basics import *
 
@@ -15,7 +10,7 @@ from  sklearn.metrics import r2_score
 import pandas as pd 
 import gma
 
-#数据输入
+
 filename = r"train.csv"
 data = pd.read_csv(filename, header=0)
 
@@ -48,7 +43,7 @@ data['ET0'] = et0
 #data.to_csv(filename1, index=False, header=True)
 
 
-#自定义时间序列长度和特征个数
+
 num_step=1
 num_feature=53
     
@@ -81,7 +76,7 @@ et0_test = et0[splits[1]]
 
 
 
-#模型训练
+
 import optuna
 from optuna.integration import FastAIPruningCallback
 from optuna.samplers import TPESampler
