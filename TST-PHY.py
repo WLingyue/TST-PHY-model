@@ -9,7 +9,7 @@ import pandas as pd
 import gma
 
 
-filename = r"train.csv"
+filename = "train.csv"
 data = pd.read_csv(filename, header=0)
 
 
